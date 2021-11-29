@@ -19,10 +19,11 @@ intents = discord.Intents.all()
 intents.members = True
 
 client = discord.Client(intents=intents)
-dbclient = MongoClient(CONNECTION_STRING)
-dbname = dbclient["KickBot"]
-entry = {"username": "abhigyanghosh30", "time": 6}
-dbname["user_list"].insert_one(entry)
+
+# dbclient = MongoClient(CONNECTION_STRING)
+# dbname = dbclient["KickBot"]
+# entry = {"username": "abhigyanghosh30", "time": 6}
+# dbname["user_list"].insert_one(entry)
 
 
 @client.event
